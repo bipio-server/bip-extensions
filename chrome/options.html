@@ -1,0 +1,67 @@
+<!doctype html />
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>bip.io Chrome Setup</title>
+    <link href="css/bipio_base.css" rel="stylesheet" />
+</head>
+<body style="" data-spy="scroll" data-target=".subnav" data-offset="50">
+    <div id="navbar">
+        <div class="container">
+            <div class="row">
+                <div class="span12">
+                    <a id="logo" class="brand" href="/">bip<span style="color: #0099FF;">io</span></a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="page-body">
+        <div class="container">
+            <div class="row">
+                <div class="span12 hero-unit" id="inner-content">
+                    <h2>Plugin Options</h2>
+                    <form class="form-horizontal form-inline" id="optionsform">
+                        <div class="list-widget config">
+                            <div class="control-group">
+                                <label class="control-label" for="username">Username</label>
+                                <div class="controls">
+                                    <input type="username" id="username" placeholder="" value="">
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label" for="api_token">API Token</label>
+                                <div class="controls">
+                                    <input type="api_token" id="api_token" placeholder="" value="">
+                                </div>
+                            </div>
+                        </div>
+                        <footer>
+                            <nav class="pagination">
+                                <div class="spaced-nav">
+                                    <div class="btn-row pull-right">
+                                        <button type="button" id="bip-test" class="btn btn-info">Test</button>
+                                        <button type="button" id="bip-save" class="btn btn-success">Save</button>
+                                    </div>
+                                </div>
+                            </nav>
+                        </footer>
+                    </form>
+                </div>
+            </div>
+            <footer class="global">
+                <p class="copyright">Copyright 2012 - <a href="">Cloudspark</a></p>
+                <nav class="legal">
+                    <li><a href="">Terms of Use</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                </nav>
+            </footer>
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bipio_client.js"></script>
+    <script src="js/bipio_options.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+{
+  "name": "BipIO",
+  "version": "0.3",
+  "manifest_version": 2,
+  "description": "Uses the bip.io API to create unique email bips for any website signup form",
+  "minimum_chrome_version": "23.0.0.0",  
+  "permissions" : [
+      "https://api.bip.io/*",
+      "https://bip.io/*",
+      "notifications",
+      "contextMenus",
+      "tabs"
+  ],
+  "icons" : {
+      "16" : "/img/icon16.png",
+      "48" : "/img/icon48.png",
+      "128" : "/img/icon128.png"
+  },
+  "web_accessible_resources": [
+    "/img/icon.png"
+  ],
+  "background" : {
+      "page" : "background_context.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": [
+        "js/jquery.min.js",
+        "js/content.js"
+      ],
+      "run_at": "document_end",
+      "all_frames": true
+    }],
+  "content_security_policy": "script-src 'self'; object-src 'self'"
+}
